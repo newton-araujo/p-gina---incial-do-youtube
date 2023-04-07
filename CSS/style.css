@@ -1,0 +1,121 @@
+@import url(reset.css);
+
+/* Style - header */ 
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "header header header header"
+    "aside main main main"
+    "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-menu {
+    margin-left: 43px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    border: 1px solid #CCCCCC;
+}
+
+.search input {
+    width: 300px;
+    height: 30px;
+    font-size: 1rem;
+}
+
+.search #bth-search {
+    background-color: #F8F8F8;
+    cursor: pointer;
+}
+
+.icon-right {
+    display: flex;
+    margin-right: 5%;
+    gap: 20px;
+    cursor: pointer;
+}
+
+
+/*aside - main and navegation */
+
+.sidebar {
+    grid-area: aside;
+    
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    width: 218px;
+    height: 968px;
+}
+
+.nav-bar a {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    color: black;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    gap: 20px;
+    
+}
+
+/*Main and videos*/
+.menu {
+    grid-area: main;
+    background-color: rgb(252, 249, 249);
+
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 260px);
+    cursor: pointer;
+}
+
+.information {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.information p {
+    font-size: .9rem;
+    color: black;
+    font-weight: bold;
+}
+
+.view {
+    font-size: .6rem;
+    margin-top: 10px;
+    text-align: center;
+    color: gray;
+
+}
+
+.information img {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+}
